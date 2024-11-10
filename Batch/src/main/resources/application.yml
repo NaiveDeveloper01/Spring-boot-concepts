@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    source:
+      jdbcUrl : jdbc:mysql://localhost:3306/sakila
+      username: root
+      password: root123
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+      hibernate:
+        ddl-auto: create
+#      jpa:
+#        properties:
+#          hibernate:
+#            dialect: org.hibernate.dialect.MySQLDialect
+    target:
+      jdbcUrl: jdbc:mysql://travel-integration.cho6emcmkj2c.ap-south-1.rds.amazonaws.com:3306/pi_group
+      username: dbadmin
+      password: gC565zi9
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  batch:
+    jdbc:
+      initialize-schema: always
+  sql:
+    init:
+      mode: always
+
+server:
+  port: 8082
+
+
