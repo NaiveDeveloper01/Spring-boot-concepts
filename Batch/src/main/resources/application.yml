@@ -13,9 +13,9 @@ spring:
 #          hibernate:
 #            dialect: org.hibernate.dialect.MySQLDialect
     target:
-      jdbcUrl: jdbc:mysql://travel-integration.cho6emcmkj2c.ap-south-1.rds.amazonaws.com:3306/pi_group
-      username: dbadmin
-      password: gC565zi9
+      jdbcUrl: jdbc:mysql:
+      username: ******
+      password: *****
       driver-class-name: com.mysql.cj.jdbc.Driver
   batch:
     jdbc:
